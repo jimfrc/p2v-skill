@@ -1,0 +1,5 @@
+interface:
+  display_name: '/p2v-agent-skill'
+  short_description: 'Generate a narrated video and slides PDF from a prompt'
+  brand_color: '#0B84F3'
+  default_prompt: '$p2v-agent-skill: Make a 60-second narrated explainer about why the sky is blue'

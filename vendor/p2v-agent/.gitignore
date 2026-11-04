@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+outputs/
+*.log
+.DS_Store
+
+# Secrets: keep .env.example, ignore real env files
+.env
+.env.*
+!.env.example

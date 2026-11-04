@@ -1,0 +1,13 @@
+topic: Three habits that improve your sleep
+description: |
+  A fast, punchy vertical short. One habit per scene, each with a concrete
+  action the viewer can try tonight.
+duration: 45s
+scenes: 4
+aspect: 9:16
+style: dark, neon accents
+tone: enthusiastic
+audience: young professionals
+language: English
+captions: on
+music: upbeat

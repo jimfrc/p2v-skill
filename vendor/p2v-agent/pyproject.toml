@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p2v-agent"
+version = "0.1.0"
+description = "Promptable AI video generator powered by an AgentScope ReActAgent instead of Claude Code. Generates a narrated Remotion MP4 plus a slides PDF from a prompt."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "p2v-agent contributors" }]
+keywords = ["agentscope", "remotion", "video", "ai", "agent", "prompt", "tts"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "agentscope>=1.0.21,<2.0.0",
+    # agentscope 1.0.x imports mcp.client.streamable_http.streamablehttp_client,
+    # which mcp 2.x removed. Keep the MCP SDK on the 1.x line.
+    "mcp>=1.13,<2",
+    # agentscope.evaluate imports tqdm at package import time but does not
+    # declare it as a dependency in 1.0.21.
+    "tqdm>=4.60",
+    # Load model configuration from a project .env file.
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+p2v-agent = "p2v_agent.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/jeromeetienne/prompt2video"
+Source = "https://github.com/jeromeetienne/prompt2video"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.data-files]
+"share/p2v-agent/skills/prompt2video" = [
+    "skills/prompt2video/SKILL.md",
+    "skills/prompt2video/scripts/images-to-pdf.mjs",
+    "skills/prompt2video/scripts/tts.ps1",
+    "skills/prompt2video/scripts/wav-duration.mjs",
+]

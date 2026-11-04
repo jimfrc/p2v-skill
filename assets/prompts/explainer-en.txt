@@ -1,0 +1,14 @@
+topic: Why the sky is blue
+description: |
+  Explain Rayleigh scattering in plain language for curious adults.
+  Start with a familiar observation, explain the physics, and end with
+  why sunsets are red.
+duration: 60s
+scenes: 4
+aspect: 16:9
+style: clean
+tone: casual
+audience: general
+language: English
+captions: off
+music: off

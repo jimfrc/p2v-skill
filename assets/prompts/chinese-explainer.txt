@@ -1,0 +1,14 @@
+topic: 为什么天空是蓝色的
+description: |
+  用瑞利散射解释天空为什么是蓝色的，最后用一个日常类比收尾，
+  并说明为什么日落是红色的。
+duration: 60s
+scenes: 4
+aspect: 16:9
+style: clean
+voice: Microsoft Huihui Desktop
+language: Chinese
+tone: casual
+audience: 中学生
+captions: off
+music: off

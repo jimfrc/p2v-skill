@@ -1,0 +1,13 @@
+topic: 用 10 岁小朋友能懂的方式讲讲量子物理
+description: |
+  从波粒二象性讲起，举几个生活中的类比，最后说明量子计算为什么重要。
+duration: 90s
+scenes: 5
+aspect: 16:9
+style: playful
+voice: Microsoft Huihui Desktop
+language: Chinese
+tone: casual, 像给朋友解释一样
+audience: kids
+captions: off
+music: off
