@@ -92,3 +92,4 @@ The vendored p2v-agent project and the `prompt2video` skill are MIT (see
 `vendor/p2v-agent/LICENSE`). The 13 Remotion skills are vendored from
 `remotion-dev/skills`; see `THIRD_PARTY_NOTICES.md` and the upstream repository
 for their terms.
+"# p2v-skill" 
